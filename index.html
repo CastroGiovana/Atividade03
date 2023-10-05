@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aula 03 </title>
+ </head>
+ <body bgcolor="silver">
+    <h2 align="center" > <i> Formulário </i></HTML> </h2>
+    <table width="700" align="center" bgcolor="pink">
+      <tr><td>
+  <fieldset>
+    <legend> <u> Informe seus dados :</u> </legend>
+    <form action="enviar.php" method="post" name="cadastro">
+    <table cellpadding="5" cellspacing="3" align="center">
+      <table border="2"> 
+     <tr>
+ <body>
+    <h1> <i> Cadastro de Produtos de Cabelo </i></h1>
+    <form action="processar_formulario.php" method="post">
+        <fieldset>
+
+            </fieldset>
+            <legend> <u>Informações Básicas </u></legend>
+            <table>
+                </tr>
+                <tr>
+                    <td><label for="nome"> <i> Nome do Produto:</i> </label></td>
+                    <td><input type="text" id="nome" name="nome" required></td>
+                </tr>
+                <tr>
+                    <td><label for="modelo"> <i> Modelo: </i></label></td>
+                    <td>
+                        <select id="Marca" name="tipo" required>
+                            <option value="Cabelo Liso"> Cabelo Liso </option>
+                            <option value="Cabelo Cacheado"> Cabelo Cacheado  </option>
+                            <option value="Cabelo Crespo"> Cabelo Crespo </option>
+                            <option value=" Cabelo Ondulado"> Cabelo Ondulado </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                        <td><label for="tipo"> <i> Marca </i></label></td>
+                        <td>
+                            <select id="Marca" name="tipo" required>
+                                <option value="Salon Line"> Salon Line </option>
+                                <option value="Elseve"> Elseve </option>
+                                <option value="Skala"> Skala </option>
+                                <option value=" Beleza Natural"> Beleza Natural </option>
+                                <option value=" Seda"> Seda </option>
+                            </select>
+                        </td>
+                    </tr>
+                <tr>
+                    <td><label for="preco"> <i> Preço: </i></label></td>
+                    <td><input type="number" id="preco" name="preco" step="0.01" required></td>
+                </tr>
+                <tr>
+                    <td><label for="estoque"> <i> Quantidade em Estoque: </i></label></td>
+                    <td><input type="number" id="estoque" name="estoque" required></td>
+                </tr>
+                <tr>
+                    <td><label for="cor"> <i> Cor </i>:</label></td>
+                    <td><input type="color" id="cor" name="cor"></td>
+                </tr>
+                <tr>
+                    <td><label for="data_fabricacao"> <i> Data de Fabricação: </i></label></td>
+                    <td><input type="date" id="data_fabricacao" name="data_fabricacao" required></td>
+                </tr>
+                <td><label for="luminosidade"> <i> Luminosidade (lux): </i></label></td>
+                <td><input type="number" id="luminosidade" name="luminosidade"></td>
+            </tr>
+            <tr>
+                <td><label for="embalagem"> <i> Embalagem: </i></label></td>
+                <td><input type="radio" id="embalagem1" name="embalagem" value="frasco"><label for="embalagem1">Frasco</label>
+                    <input type="radio" id="embalagem2" name="embalagem" value="tubo"><label for="embalagem2">Tubo</label></td>
+            </tr>
+            <tr>
+                <td><label for="validade"> <i> Possui Validade: </i></label></td>
+                <td><input type="checkbox" id="validade" name="validade"></td>
+            </tr>
+            </table>
+        </fieldset>
+        <br/> <!-- Quebra de Linha-->
+        <fieldset>
+            <legend ><u> Outras Informações </u></legend>  
+            <table>
+                 <tr>
+                     <td><label for="temperatura"><i> Temperatura (°C): </i></label></td>
+                     <td><input type="number" id="temperatura" name="temperatura" step="0.1"></td>
+                      </tr>
+                <tr>
+                    <td><label for="tamanho"> <i> Tamanho: </i></label></td>
+                    <td><input type="range" id="tamanho" name="tamanho" min="1" max="100" step="1"></td>
+                </tr>
+                <tr>
+                    <td><label for="disponivel"><i> Disponibilidade do Produto: </i> </label></td>
+                    <td><input type="checkbox" id="disponivel" name="disponivel" checked></td>
+                </tr>
+                <tr>
+                    <td> <i> Descrição do Produto: </i></td>
+                    <td><textarea name="descricao_produto" rows="4" cols="50" readonly>Aqui você pode adicionar uma descrição do tipo do Produto.</textarea></td>
+                    </tr>
+                <tr>
+                    <td><label for="desabilitado"> <i> Campo Desabilitado: </i></label></td>
+                    <td><input type="text" id="desabilitado" name="desabilitado" disabled></td>
+                </tr>
+                <tr>
+                    <td><label for="readonly"> <i> Campo Somente Leitura: </i></label></td>
+                    <td><input type="text" id="readonly" name="readonly" value="Valor Somente Leitura" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="tempo"> <i> Tempo de Aplicação (minutos): </i></label></td>
+                    <td><input type="time" id="tempo" name="tempo"></td>
+                </tr> 
+            </table> 
+            <img src="Imagens/estetica.jpg"250" height="100" border="3"/>
+            <br/> <!-- Quebra de Linha--> 
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Cadastrar">
+        <input type="reset" id="limpar" name="limpar" value="Limpar"/> </th>
+            </tr>
+    </form>
+</body>
+</html>
